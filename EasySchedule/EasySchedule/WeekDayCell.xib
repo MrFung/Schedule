@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WeekDayCell" customModule="EasySchedule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1t-lU-rot" userLabel="rightBorder">
+                        <rect key="frame" x="180" y="0.0" width="0.0" height="129"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="JE1-Yx-RDZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2g-QL-cMi" userLabel="buttonBorder">
+                        <rect key="frame" x="1" y="129" width="179" height="0.0"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="ZGK-15-tCy"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-bz-qfc">
+                        <rect key="frame" x="69" y="55" width="42" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="w1t-lU-rot" secondAttribute="bottom" id="5Oe-oD-kOr"/>
+                <constraint firstItem="w1t-lU-rot" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HZ5-mC-zoG"/>
+                <constraint firstAttribute="trailing" secondItem="w1t-lU-rot" secondAttribute="trailing" id="Vmt-IS-oby"/>
+                <constraint firstItem="IB3-bz-qfc" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Xx9-eG-pp2"/>
+                <constraint firstAttribute="trailing" secondItem="m2g-QL-cMi" secondAttribute="trailing" id="aIZ-Xq-Bq0"/>
+                <constraint firstItem="w1t-lU-rot" firstAttribute="leading" secondItem="m2g-QL-cMi" secondAttribute="trailing" id="bdR-UV-rFf"/>
+                <constraint firstItem="m2g-QL-cMi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eLo-Fu-83i"/>
+                <constraint firstItem="IB3-bz-qfc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eMa-Ng-8tI"/>
+                <constraint firstAttribute="bottom" secondItem="m2g-QL-cMi" secondAttribute="bottom" id="oef-ns-zk7"/>
+            </constraints>
+            <size key="customSize" width="180" height="129"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="bdR-UV-rFf"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="buttonBorder" destination="m2g-QL-cMi" id="Alm-zq-18Y"/>
+                <outlet property="dayLabel" destination="IB3-bz-qfc" id="Y5N-E3-bKm"/>
+                <outlet property="rightBorder" destination="w1t-lU-rot" id="NiS-de-gDS"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="317.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
